@@ -75,8 +75,73 @@
             });
         }
     </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('#project-img-swiper img');
+            let currentIndex = 0;
 
+            function changeImage() {
+                // Remove the 'active' class from the current image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.remove('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                    return;
+                }
+
+                // Calculate the index of the next image
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Add the 'active' class to the next image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.add('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                }
+            }
+
+            // Change the image every 3 seconds (3000 milliseconds)
+            setInterval(changeImage, 3000);
+        });
+
+    </script>
     <style>
+        #project-img-swiper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            object-fit: contain;
+            aspect-ratio: 3/2;
+            /* width: 500px; */
+            /* Set your desired width */
+            /* height: 300px; */
+            /* Set your desired height */
+            overflow: hidden;
+        }
+
+        #project-img-swiper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #project-img-swiper img.active {
+            opacity: 1;
+        }
+
+        @media (max-width:576px) {
+            #project-img-swiper {
+                width: 100%;
+            }
+        }
+
         .project-images .img {
             width: 100%;
         }
@@ -750,8 +815,28 @@
                                 </div>
                             </div>
 
-                            <div id="project-img"><img src="./images/images/vibgyor/main1.jpg" alt="VIBGYOR-img"></div>
+                            <!-- <div id="project-img"><img src="./images/images/vibgyor/main1.jpg" alt="VIBGYOR-img"></div> -->
+                            <div id="project-img-swiper">
+                                <img src="./images/images/vibgyor/gallery2.jpg" alt="Image 1" />
+                                <img src="./images/images/vibgyor/gallery3.jpg" alt="Image 2" />
+                                <img src="./images/images/vibgyor/gallery4.jpg" alt="Image 3" />
+                                <img src="./images/images/vibgyor/gallery5.jpg" alt="Image 4" />
+                                <img src="./images/images/vibgyor/gallery6.jpg" class="active" alt="Image 5" />
+                                <img src="./images/images/vibgyor/gallery7.jpg" alt="Image 6" />
+                                <img src="./images/images/vibgyor/gallery8.jpg" alt="Image 7" />
+                                <img src="./images/images/vibgyor/gallery9.jpg" alt="Image 8" />
+                                <img src="./images/images/vibgyor/gallery10.jpg" alt="Image 9" />
+                                <img src="./images/images/vibgyor/gallery11.jpg" alt="Image 10" />
+                                <img src="./images/images/vibgyor/gym_area.jpg" alt="Image 11" />
+                                <img src="./images/images/vibgyor/Kitchen_Dining.jpg" alt="Image 12" />
+                                <img src="./images/images/vibgyor/Living_Dining.jpg" alt="Image 13" />
+                                <img src="./images/images/vibgyor/main.jpg" alt="Image 14" />
+                                <img src="./images/images/vibgyor/Mr. Harshit Bhai Banquet Hall.jpg" alt="Image 15" />
+                                <img src="./images/images/vibgyor/Mr. Harshit Bhai Game Room Cam 02.jpg"
+                                    alt="Image 16" />
 
+                                <!-- Add more images as needed -->
+                            </div>
                             <!-- START PROJECT FEATURES -->
                             <div class="project-features">
 
@@ -911,8 +996,8 @@
                 <div class="what-we-do">
                     <div id="tabbed-nav">
                         <ul>
-                            <li><a>PLAN 1</a></li>
-                            <li><a>PLAN 2</a></li>
+                            <li><a>PLAN1</a></li>
+                            <li><a>PLAN2</a></li>
                             <!-- <li><a>PLAN 3
                                 </a></li>
                             <li><a>PLAN 4
@@ -1082,7 +1167,64 @@
                         <h1>Amenities</h1>
                     </div>
                     <div class="row amenities_card" style="margin-top: 3rem; text-align: center;">
-                        <div class="col-lg-4 col-md-4 col-xs-6" id="one">
+                        <div class="col-lg-4 col-md-4 col-xs-6 " id="one">
+                            <div class="inside-card">
+                                <div class="card-header">
+                                    <img class="bgrmTrial" src="./images/images/icons/vrv.png" alt="Vibgyor-amenities">
+                                </div>
+                                <div class="card-body">
+                                    <p>VRV</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 " id="two">
+                            <div class="inside-card">
+                                <div class="card-header">
+                                    <img class="bgrmTrial" src="./images/images/icons/fullyItalian.png" alt="Vibgyor-amenities">
+                                </div>
+                                <div class="card-body">
+                                    <p>Fully Italian</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6">
+                            <div class="inside-card">
+                                <div class="card-header">
+                                    <img class="bgrmTrial" src="./images/images/icons/sw.png"
+                                        alt="Vibgyor-amenities">
+                                </div>
+                                <div class="card-body">
+                                    <p>Soundproofing Window</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 " id="one">
+                            <div class="inside-card">
+                                <div class="card-header">
+                                    <img class="bgrmTrial" src="./images/images/icons/mk.png" alt="Vibgyor-amenities">
+                                </div>
+                                <div class="card-body">
+                                    <p>ModularKitchen</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-4 col-xs-6 " id="two">
+                            <div class="inside-card">
+                                <div class="card-header">
+                                    <img class="bgrmTrial" src="./images/images/icons/sw.png" alt="Vibgyor-amenities">
+                                </div>
+                                <div class="card-body">
+                                    <p>Soundprofing Windows</p>
+
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="col-lg-4 col-md-4 col-xs-6">
                             <div class="inside-card">
                                 <div class="card-header">
                                     <img class="bgrmTrial" src="./images/images/icons/1.png" alt="Vibgyor-amenities">
@@ -1095,7 +1237,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" id="two">
+                       
+                        <div class="col-lg-4 col-md-4 col-xs-6">
                             <div class="inside-card">
                                 <div class="card-header">
                                     <img class="bgrmTrial" src="./images/images/icons/2.png" alt="Vibgyor-amenities">
@@ -1106,7 +1249,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6 " id="three">
+                        <div class="col-lg-4 col-md-4 col-xs-6 ">
                             <div class="inside-card">
                                 <div class="card-header">
                                     <img class="bgrmTrial" src="./images/images/icons/3.png" alt="Vibgyor-amenities">
@@ -1239,7 +1382,8 @@
                             </div>
                         </div>
 
-                        <button class="more-aminities load-more">More Aminities</button>
+
+                        <button class="more-aminities load-more">More Amenities</button>
                         <!-- Button trigger modal -->
 
 

@@ -75,8 +75,73 @@
             });
         }
     </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('#project-img-swiper img');
+            let currentIndex = 0;
 
+            function changeImage() {
+                // Remove the 'active' class from the current image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.remove('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                    return;
+                }
+
+                // Calculate the index of the next image
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Add the 'active' class to the next image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.add('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                }
+            }
+
+            // Change the image every 3 seconds (3000 milliseconds)
+            setInterval(changeImage, 3000);
+        });
+
+    </script>
     <style>
+        #project-img-swiper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            object-fit: contain;
+            aspect-ratio: 3/2;
+            /* width: 500px; */
+            /* Set your desired width */
+            /* height: 300px; */
+            /* Set your desired height */
+            overflow: hidden;
+        }
+
+        #project-img-swiper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #project-img-swiper img.active {
+            opacity: 1;
+        }
+
+        @media (max-width:576px) {
+            #project-img-swiper {
+                width: 100%;
+            }
+        }
+
         .project-images .img {
             width: 100%;
         }
@@ -95,7 +160,11 @@
             color: #616161;
         }
 
+        .projectDetailForMobile span {
+            color: #93A957;
+            font-weight: 500;
 
+        }
 
         /* .location-heading {
             position: absolute;
@@ -738,21 +807,39 @@
                                     <div class="detail-sec">
                                         <div class="text">
                                             <h3>AARYAVAN</h3>
-                                            <p class="projectDetailForMobile">THE EXCLUSIVE EDITION OF WEEKEND VILLAS.
+                                            <!-- <p class="projectDetailForMobile">THE EXCLUSIVE EDITION OF WEEKEND VILLAS.
                                                 IS A HEAVENLY HOME TO 150+ PEACOCKS AND 1100+ CHICKOO TREES. WE ARE
                                                 READY TO REDEFINE THE CONNECTION BETWEEN NATURE AND URBAN LANDSCAPES BY
                                                 PRESERVING AND NURTURING THIS NATURAL HABITAT. CHANNEL YOUR INNER JOY
                                                 AND RECOONECT WITH YOUR ROOTS IN THIS METICULOUSLY DESIGNED PARADISE!
-                                                THE GREENEST LOCALE OF THE TOWN AWAITS..</p>
+                                                THE GREENEST LOCALE OF THE TOWN AWAITS..</p> -->
+                                            <p class="projectDetailForMobile"><b>The exclusive edition of Weekend Villas
+                                                    is a heavenly <span>home to 150+ peacocks</span>, <span>fully grown
+                                                        1500+ chickoo, and 500+ ambla trees</span></b>. We are ready to
+                                                redefine the connection between nature and urban landscapes by
+                                                preserving and nurturing this natural habitat. Channel your inner joy
+                                                and reconnect with your roots in this meticulously designed paradise!
+                                                <b>Experience luxury from your name to your luxury street with
+                                                    effortless driving for your car</b>. The greenest locale of the town
+                                                awaits. <b>Show villa unwilling soon!</b></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="project-img"><img src="./images/images/projects/AARYAVAN Garden (1)-1.jpg"
+                            <!-- <div id="project-img"><img src="./images/images/projects/AARYAVAN Garden (1)-1.jpg"
                                     alt="VIBGYOR-img">
+                            </div> -->
+                            <div id="project-img-swiper">
+                                <img src="./images/images/aaryavan/AARYAVAN Courtyard.jpg" class="active"
+                                    alt="Image 1" />
+                                <img src="./images/images/aaryavan/AARYAVAN Garden.jpg" alt="Image 2">
+                                <img src="./images/images/aaryavan/AARYAVAN Garden1.jpg" alt="Image 3">
+                                <img src="./images/images/aaryavan/AARYAVAN Gate.jpg" alt="Image 4">
+                                <img src="./images/images/aaryavan/AARYAVAN RAIN.jpg" alt="Image 5">
+                                <img src="./images/images/aaryavan/AARYAVAN Street.jpg" alt="Image 6">
+                                <!-- Add more images as needed -->
                             </div>
-
                             <!-- START PROJECT FEATURES -->
                             <div class="project-features">
 
@@ -762,7 +849,7 @@
                                 </div>
                                 <div class="feature-sec">
                                     <h6>Total no. of Units</h6>
-                                    <span> 160</span>
+                                    <span> 202</span>
                                 </div>
 
                                 <div class="feature-sec">
@@ -1710,7 +1797,7 @@
 
             // You can trigger the brochure download here
             var downloadLink = document.createElement('a');
-            downloadLink.href = 'images/Aaryavan brochure .pdf';
+            downloadLink.href = 'images/Aaryavan brochure1.pdf';
             downloadLink.download = 'Aaryavan Brochure.pdf';
             document.body.appendChild(downloadLink);
             downloadLink.click();
