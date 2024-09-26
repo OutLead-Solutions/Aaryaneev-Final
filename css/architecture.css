@@ -1753,6 +1753,19 @@ span.big-text {
         width: 100%;
        
     }
+    .footer .footer-detail .footer-sec span {
+        font-weight: 100;
+        margin: 0px 0 0 0;
+        display: block;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .footer .footer-detail .footer-sec h3 {
+        /* background: url(../images/white-small-wave.png) no-repeat center bottom; */
+        padding: 0 0 20px 0;
+        text-transform: uppercase;
+    }
+    
 }
 
 .bgrmTrial{

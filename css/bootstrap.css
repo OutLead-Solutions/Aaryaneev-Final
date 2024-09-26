@@ -7883,13 +7883,14 @@ button.close {
         margin: 30px 0 0 0;
     }
     .footer .footer-detail .footer-sec {
-        margin: 0 0 68px 0;
+        margin: 0 0 20px 0;
     }
     .contact-detail .office {
         width: 47%;
     }
     .inquiries {
         float: left;
+        width: 100%;
     }
     .contact-detail .office.office-right {
         float: left;
@@ -7917,9 +7918,7 @@ button.close {
 }
 
 @media (max-width: 768px) {
-    .cd-primary-nav a {
-        font-size: 55px;
-    }
+    
     .clients-words {
         background-size: 285%;
         background-position: 32% 0;
@@ -8007,7 +8006,7 @@ button.close {
 
 @media (max-width: 480px) {
     .cd-primary-nav a {
-        font-size: 42px !important;
+        font-size: 30px !important;
     }
     .black-btn {
         font-size: 14px;

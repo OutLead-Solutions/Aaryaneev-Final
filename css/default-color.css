@@ -134,6 +134,14 @@
  }
  
  .cd-primary-nav {
-     background: #93A957
+     background: #000000
      ;
+ }
+ @media (max-width:769px){
+    .cd-primary-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
  }
