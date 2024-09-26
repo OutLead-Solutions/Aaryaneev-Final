@@ -75,38 +75,38 @@
             });
         }
     </script>
- <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll('#project-img-swiper img');
-    let currentIndex = 0;
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('#project-img-swiper img');
+            let currentIndex = 0;
 
-    function changeImage() {
-        // Remove the 'active' class from the current image
-        if (images[currentIndex]) {
-            images[currentIndex].classList.remove('active');
-        } else {
-            console.error('No image found at index:', currentIndex);
-            return;
-        }
+            function changeImage() {
+                // Remove the 'active' class from the current image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.remove('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                    return;
+                }
 
-        // Calculate the index of the next image
-        currentIndex = (currentIndex + 1) % images.length;
+                // Calculate the index of the next image
+                currentIndex = (currentIndex + 1) % images.length;
 
-        // Add the 'active' class to the next image
-        if (images[currentIndex]) {
-            images[currentIndex].classList.add('active');
-        } else {
-            console.error('No image found at index:', currentIndex);
-        }
-    }
+                // Add the 'active' class to the next image
+                if (images[currentIndex]) {
+                    images[currentIndex].classList.add('active');
+                } else {
+                    console.error('No image found at index:', currentIndex);
+                }
+            }
 
-    // Change the image every 3 seconds (3000 milliseconds)
-    setInterval(changeImage, 3000);
-});
+            // Change the image every 3 seconds (3000 milliseconds)
+            setInterval(changeImage, 3000);
+        });
 
     </script>
     <style>
-         #project-img-swiper {
+        #project-img-swiper {
             display: flex;
             justify-content: center;
             position: relative;
@@ -135,11 +135,13 @@
         #project-img-swiper img.active {
             opacity: 1;
         }
+
         @media (max-width:576px) {
-            #project-img-swiper{
+            #project-img-swiper {
                 width: 100%;
             }
         }
+
         .project-images .img {
             width: 100%;
         }
@@ -559,8 +561,10 @@
                         <li class="cd-label">Follow us</li>
 
                         <li class="social-icons">
+                            <a href="https://instagram.com/aaryaneev.developer?igshid=MzRlODBiNWFlZA=="
+                                target="_Aaryneev"><span class="icon-instagram"></span></a>
+                            <a href="#."><span class="icon-linkedin-1"></span></a>
                             <a href="#."><span class="icon-facebook-1"></span></a>
-                            <a href="#."><span class="icon-twitter-1"></span></a>
                             <!-- <a href="#."><span class="icon-google"></span></a> -->
                             <!-- <a href="#."><span class="icon-behance"></span></a> -->
                         </li>
@@ -813,72 +817,73 @@
                             </div>
 
                             <!-- <div id="project-img"><img src="./images/images/home/aaryabhumiImgg.png" alt="VIBGYOR-img"> -->
-                                <div id="project-img-swiper">
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_1.jpeg" class="active" alt="Image 1"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_2.jpeg" alt="Image 2"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_3.jpeg" alt="Image 3"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_4.jpeg" alt="Image 4"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_5.jpeg" alt="Image 5"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_6.jpeg" alt="Image 6"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_7.jpeg" alt="Image 7"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_8.jpeg" alt="Image 8"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_9.jpeg" alt="Image 9"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_10.jpeg" alt="Image 10"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_11.jpeg" alt="Image 11"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_12.jpeg" alt="Image 12"/>
-                                    <img src="./images/images/aaryabhumi/Aaryabhumi_Img_13.jpeg" alt="Image 13"/>
-                                    <!-- Add more images as needed -->
-                                </div>
-                            </div>
-
-                            <!-- START PROJECT FEATURES -->
-                            <div class="project-features">
-
-                                <div class="feature-sec">
-                                    <h6>Location</h6>
-                                    <span>AHMEDABAD</span>
-                                </div>
-                                <div class="feature-sec">
-                                    <h6>Stories</h6>
-                                    <span>11 STOREY</span>
-                                </div>
-
-                                <div class="feature-sec">
-                                    <h6>Categories</h6>
-                                    <span>Residential</span>
-                                </div>
-
-                                <div class="feature-sec">
-                                    <h6>Size</h6>
-                                    <span>"25,000 SHOP SQFT + 185,000 RESIDENCE SQFT = TOTAL= 2,10,000 SQFT"</span>
-                                </div>
-                                <div class="feature-sec">
-                                    <h6>Total No. of units</h6>
-                                    <span>"SHOPS-19, RESIDENCE-88 TOTAL-107"</span>
-                                </div>
-
-
-
-                                <div class="feature-sec">
-                                    <h6>STATUS</h6>
-                                    <span>Completed</span>
-                                </div>
-                                <div class="feature-sec">
-                                    <h6>Contact</h6>
-                                    <span>+91 7874608282</span>
-                                </div>
-
+                            <div id="project-img-swiper">
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_1.jpeg" class="active"
+                                    alt="Image 1" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_2.jpeg" alt="Image 2" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_3.jpeg" alt="Image 3" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_4.jpeg" alt="Image 4" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_5.jpeg" alt="Image 5" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_6.jpeg" alt="Image 6" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_7.jpeg" alt="Image 7" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_8.jpeg" alt="Image 8" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_9.jpeg" alt="Image 9" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_10.jpeg" alt="Image 10" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_11.jpeg" alt="Image 11" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_12.jpeg" alt="Image 12" />
+                                <img src="./images/images/aaryabhumi/Aaryabhumi_Img_13.jpeg" alt="Image 13" />
+                                <!-- Add more images as needed -->
                             </div>
                         </div>
-                        <!-- END PROJECT FEATURES -->
-
-
 
                         <!-- START PROJECT FEATURES -->
+                        <div class="project-features">
+
+                            <div class="feature-sec">
+                                <h6>Location</h6>
+                                <span>AHMEDABAD</span>
+                            </div>
+                            <div class="feature-sec">
+                                <h6>Stories</h6>
+                                <span>11 STOREY</span>
+                            </div>
+
+                            <div class="feature-sec">
+                                <h6>Categories</h6>
+                                <span>Residential</span>
+                            </div>
+
+                            <div class="feature-sec">
+                                <h6>Size</h6>
+                                <span>"25,000 SHOP SQFT + 185,000 RESIDENCE SQFT = TOTAL= 2,10,000 SQFT"</span>
+                            </div>
+                            <div class="feature-sec">
+                                <h6>Total No. of units</h6>
+                                <span>"SHOPS-19, RESIDENCE-88 TOTAL-107"</span>
+                            </div>
 
 
 
-                        <!-- <div class="container">
+                            <div class="feature-sec">
+                                <h6>STATUS</h6>
+                                <span>Completed</span>
+                            </div>
+                            <div class="feature-sec">
+                                <h6>Contact</h6>
+                                <span>+91 7874608282</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- END PROJECT FEATURES -->
+
+
+
+                    <!-- START PROJECT FEATURES -->
+
+
+
+                    <!-- <div class="container">
                             <div class="project-detail">
 
                                 <div class="detail-sec">
@@ -901,70 +906,69 @@
                         </div> -->
 
 
-                        <!-- <br> <br> -->
+                    <!-- <br> <br> -->
 
-                        <!-- START PROJECT FEATURES -->
+                    <!-- START PROJECT FEATURES -->
 
 
-                        <!-- <br> <br> -->
+                    <!-- <br> <br> -->
 
-                        <div class="container mt-5" id="modalForm">
+                    <div class="container mt-5" id="modalForm">
 
-                            <!-- Modal -->
-                            <div class="modal fade" style="opacity: 1;" id="exampleModal" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title" id="exampleModalLabel" style="font-weight: 700;">
-                                                Fill This Form To Download
-                                                Brochure</h4>
-                                            <button type="button" class="close" data-bs-dismiss="modal"
-                                                aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form id="demoForm" onsubmit="return submitForm(event)" novalidate>
-                                                <div class="form-group">
-                                                    <label for="name">Name*</label>
-                                                    <input type="text" class="form-control" id="name"
-                                                        placeholder="User Name" required>
-                                                    <span id="name-error" class="error-message errorStyle"></span>
-                                                    <br>
-                                                    <label for="email">Email*</label>
-                                                    <input type="email" class="form-control" id="email"
-                                                        placeholder="Enter Your Email" required>
-                                                    <span id="email-error" class="error-message errorStyle"></span>
-                                                    <br>
-                                                    <label for="mobile">Mobile No*</label>
-                                                    <input type="text" class="form-control" id="mobile"
-                                                        placeholder="Enter Your Number" required>
-                                                    <span id="contact-error" class="error-message errorStyle"></span>
-                                                    <div class="modal-footer" style="border-top: none;">
-                                                        <button type="submit" class="black-btn"
-                                                            style="padding: 10px 50px; border: 5px;">Submit</button>
-                                                        <!-- <button type="button" class="black-btn"
+                        <!-- Modal -->
+                        <div class="modal fade" style="opacity: 1;" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel" style="font-weight: 700;">
+                                            Fill This Form To Download
+                                            Brochure</h4>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="demoForm" onsubmit="return submitForm(event)" novalidate>
+                                            <div class="form-group">
+                                                <label for="name">Name*</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="User Name" required>
+                                                <span id="name-error" class="error-message errorStyle"></span>
+                                                <br>
+                                                <label for="email">Email*</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Enter Your Email" required>
+                                                <span id="email-error" class="error-message errorStyle"></span>
+                                                <br>
+                                                <label for="mobile">Mobile No*</label>
+                                                <input type="text" class="form-control" id="mobile"
+                                                    placeholder="Enter Your Number" required>
+                                                <span id="contact-error" class="error-message errorStyle"></span>
+                                                <div class="modal-footer" style="border-top: none;">
+                                                    <button type="submit" class="black-btn"
+                                                        style="padding: 10px 50px; border: 5px;">Submit</button>
+                                                    <!-- <button type="button" class="black-btn"
                                                             style="padding: 10px 50px; border: 5px;"
                                                             data-bs-dismiss="modal">Close</button> -->
-                                                    </div>
                                                 </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
-                <!-- <br> <br> -->
-                <!-- START PROJECT IMAGES -->
-
-
-                <!-- END PROJECT IMAGES -->
-
         </div>
+        <!-- <br> <br> -->
+        <!-- START PROJECT IMAGES -->
+
+
+        <!-- END PROJECT IMAGES -->
+
+    </div>
     </div>
 
 
@@ -1457,7 +1461,7 @@
                                 <!-- <a href="mailto:account@aaryaneev.com"
                                     style="color: white; text-decoration: none;">account@aaryaneev.com</a><br/> -->
                                 <a href="mailto:info@aaryaneev.com"
-                                    style="color: white; text-decoration: none;">info@aaryaneev.com</a><br/>
+                                    style="color: white; text-decoration: none;">info@aaryaneev.com</a><br />
                                 <a href="mailto:sales@aaryaneev.com"
                                     style="color: white; text-decoration: none;">sales@aaryaneev.com</a>
                             </span>
@@ -1477,10 +1481,10 @@
                         <div class="footer-sec">
                             <h3>FOLLOW US</h3>
                             <div class="social-icons">
-                                <a href="#." class="fb"><i class="icon-facebook-1"></i></a>
-                                <a href="#." class="tw"><i class="icon-twitter-1"></i></a>
                                 <a href="https://instagram.com/aaryaneev.developer?igshid=MzRlODBiNWFlZA=="
                                     target="_Aaryneev" class="gp"><i class="icon-instagram"></i></a>
+                                <a href="#." class="tw"><i class="icon-linkedin-1"></i></a>
+                                <a href="#." class="fb"><i class="icon-facebook-1"></i></a>
                             </div>
                         </div>
                     </div>

@@ -28,7 +28,9 @@
 .icon-facebook-1:before {
     content: "\e9a5";
 }
-
+.icon-linkedin-1:before{
+    content:"\f0e1";
+}
 .icon-google:before {
     content: "\e9a6";
 }

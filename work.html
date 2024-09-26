@@ -97,10 +97,10 @@
                         <li class="cd-label">Follow us</li>
 
                         <li class="social-icons">
+                            <a href="https://instagram.com/aaryaneev.developer?igshid=MzRlODBiNWFlZA=="
+                                target="_Aaryneev"><span class="icon-instagram"></span></a>
+                            <a href="#."><span class="icon-linkedin-1"></span></a>
                             <a href="#."><span class="icon-facebook-1"></span></a>
-                            <a href="#."><span class="icon-twitter-1"></span></a>
-                            <a href="#."><span class="icon-google"></span></a>
-                            <a href="#."><span class="icon-behance"></span></a>
                         </li>
 
                     </ul>
@@ -494,7 +494,8 @@
                         <div class="col-md-4">
                             <div class="footer-sec">
                                 <h3>find us</h3>
-                                <span>205, Abhiraj Complex, <br> 68B Swastik Society, Navrangpura, Ahmedabad- 380009</span>
+                                <span>205, Abhiraj Complex, <br> 68B Swastik Society, Navrangpura, Ahmedabad-
+                                    380009</span>
                             </div>
                         </div>
 
@@ -502,9 +503,10 @@
                             <div class="footer-sec">
                                 <h3>FOLLOW US</h3>
                                 <div class="social-icons">
+                                    <a href="https://instagram.com/aaryaneev.developer?igshid=MzRlODBiNWFlZA=="
+                                        target="_Aaryneev" class="gp"><i class="icon-instagram"></i></a>
+                                    <a href="#." class="tw"><i class="icon-linkedin-1"></i></a>
                                     <a href="#." class="fb"><i class="icon-facebook-1"></i></a>
-                                    <a href="#." class="tw"><i class="icon-twitter-1"></i></a>
-                                    <a href="#." class="gp"><i class="icon-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -587,29 +589,29 @@
             }, 500);
         });
 
-        $(document).ready(function() {
-        // Toggle sub-menu visibility on mobile click
-        $('.cd-primary-nav li').click(function(e) {
-            // Check if the clicked li has a dropdown-menu
-            if ($(this).find('.dropdown-menu').length > 0) {
-                // Prevent the default link behavior
-                e.preventDefault();
-                
-                // Toggle the visibility of the dropdown-menu
-                $(this).find('.dropdown-menu').toggle();
-                
-                // Hide other open dropdowns
-                $('.cd-primary-nav li').not(this).find('.dropdown-menu').hide();
-            }
-        });
+        $(document).ready(function () {
+            // Toggle sub-menu visibility on mobile click
+            $('.cd-primary-nav li').click(function (e) {
+                // Check if the clicked li has a dropdown-menu
+                if ($(this).find('.dropdown-menu').length > 0) {
+                    // Prevent the default link behavior
+                    e.preventDefault();
 
-        // Close dropdowns when clicking outside of them
-        $(document).click(function(e) {
-            if (!$(e.target).closest('.cd-primary-nav li').length) {
-                $('.cd-primary-nav .dropdown-menu').hide();
-            }
+                    // Toggle the visibility of the dropdown-menu
+                    $(this).find('.dropdown-menu').toggle();
+
+                    // Hide other open dropdowns
+                    $('.cd-primary-nav li').not(this).find('.dropdown-menu').hide();
+                }
+            });
+
+            // Close dropdowns when clicking outside of them
+            $(document).click(function (e) {
+                if (!$(e.target).closest('.cd-primary-nav li').length) {
+                    $('.cd-primary-nav .dropdown-menu').hide();
+                }
+            });
         });
-    });
     </script>
 
 </body>

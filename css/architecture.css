@@ -673,13 +673,13 @@ span.big-text {
 
 .footer .footer-detail .footer-sec h3 {
     /* background: url(../images/white-small-wave.png) no-repeat center bottom; */
-    padding: 0 0 28px 0;
+    padding: 0 0 10px 0;
     text-transform: uppercase;
 }
 
 .footer .footer-detail .footer-sec span {
     font-weight: 100;
-    margin: 40px 0 0 0;
+    margin: 10px 0 0 0;
     display: block;
     font-size: 20px;
     line-height: 28px;
@@ -1587,9 +1587,10 @@ span.big-text {
 }
 
 .cd-primary-nav .social-icons a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin-left: 10px;
     font-size: 18px;
-    color: #333;
+    /* color: #333; */
 }
 .statistics {
     width: 100%;
@@ -1762,7 +1763,7 @@ span.big-text {
     }
     .footer .footer-detail .footer-sec h3 {
         /* background: url(../images/white-small-wave.png) no-repeat center bottom; */
-        padding: 0 0 20px 0;
+        padding: 0 0 10px 0;
         text-transform: uppercase;
     }
     
