@@ -315,8 +315,8 @@ Main components
 }
 
 .cd-primary-nav .social-icons span:hover {
-    background: #fff;
-    color: #111;
+    /* background: #fff; */
+    /* color: #111; */
 }
 
 .cd-primary-nav .cd-label {
