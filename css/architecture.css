@@ -1653,7 +1653,7 @@ span.big-text {
 
 @media only screen and (max-width: 1470px) {
     .statistics-container {
-        gap: 80px 200px;
+        gap: 80px 130px;
     }
 }
 
