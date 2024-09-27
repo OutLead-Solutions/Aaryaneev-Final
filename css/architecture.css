@@ -1403,7 +1403,26 @@ span.big-text {
     margin: 5px;
     /* margin-bottom: 30px; */
 }
-
+@media (min-width:400px) and (max-width:900px){
+    .project-features .feature-sec {
+        float: left;
+        width: 23%;
+        text-align: center;
+        margin: 20px 0px;
+        /* margin-bottom: 30px; */
+    }
+    .project-features {
+        background: #f0f1f2;
+        padding: 35px 0px;
+        display: flex;
+        justify-content: unset;
+        /* float: left; */
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+    
+}
 .project-features .feature-sec h6 {
     font-weight: 700;
 }
@@ -1653,7 +1672,7 @@ span.big-text {
 
 @media only screen and (max-width: 1470px) {
     .statistics-container {
-        gap: 80px 130px;
+        gap: 80px 120px;
     }
 }
 
