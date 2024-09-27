@@ -269,9 +269,13 @@ Main components
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cd-primary-nav li {
+    width: 100%;
     font-size: 22px;
     font-size: 1.375rem;
     font-weight: 300;
@@ -304,9 +308,7 @@ Main components
     font-size: 36px;
 }
 
-.cd-primary-nav .social-icons a:hover {
-    background: none;
-}
+
 
 .cd-primary-nav .social-icons span {
     font-size: 36px;
@@ -344,7 +346,9 @@ Main components
     text-indent: 100%;
     white-space: nowrap;
 }
-
+.accordion-single-content a{
+    font-size: 20px !important;
+}
 .cd-primary-nav .cd-facebook a {
     background-position: 0 0;
 }
