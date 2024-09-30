@@ -7826,14 +7826,14 @@ button.close {
     }
     .mobile-menu .cd-primary-nav-trigger .cd-menu-icon::before,
     .mobile-menu .cd-primary-nav-trigger .cd-menu-icon:after {
-        background-color: #FFF;
+        /* background-color: #FFF; */
     }
     .mobile-menu .cd-menu-icon {
-        background-color: #FFF;
+        /* background-color: #FFF; */
     }
     .mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before,
     .mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
     .clients-words {
         background-size: 250%;
@@ -8143,4 +8143,7 @@ button.close {
     .white-slide .tp-caption.black_heavy_60.fade.start {
         left: 42px !important;
     }
+}
+.dropdown-menu{
+    background-color: white !important;
 }
