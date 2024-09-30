@@ -80,6 +80,17 @@ h1 {
     color: #000;
 }
 
+@media (max-width:769px){
+    h1 {
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #000;
+    }
+    
+}
+
 h2 {
     font-weight: 700;
     font-size: 42px;
@@ -623,10 +634,18 @@ span.big-text {
 /*..... CLIENTS WORDS ......*/
 
 .clients-words {
-    background: url(../images/client-words.jpg) no-repeat fixed;
+    background: url(../images/client-words.jpg) no-repeat center center;
+    background-size: cover;
     width: 100%;
     text-align: center;
-    background-size: 110%;
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+}
+
+@media only screen and (min-width: 1024px) {
+    .clients-words {
+        background-attachment: fixed;
+    }
 }
 
 .kind-words {
@@ -1618,8 +1637,8 @@ span.big-text {
     justify-content: center;
     /* width: 100%; */
     gap: 10px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
     /* margin-left: 30px; */
 }
@@ -1660,10 +1679,17 @@ span.big-text {
     color: white;
     margin-bottom: 15px;
 }
+@media (max-width:769px){
+    .statistics-card {
+        width: 180px;
+        height: auto;
+        margin: 0px 100px;
+    }
+}
 
 @media only screen and (max-width: 1470px) {
     .statistics-container {
-        gap: 80px 120px;
+        gap: 40px 120px;
     }
 }
 
@@ -1814,4 +1840,17 @@ span.big-text {
 }
 .header .navigation .dropdown-menu li a{
 color: black !important;
+}
+
+#BackgroundSet{
+    background-color: white;
+}
+#setAboutMainContainer{
+    padding: 8rem 0rem;
+}
+
+@media (max-width:769px){
+    #setAboutMainContainer{
+        padding: 2rem 0rem;
+    }
 }

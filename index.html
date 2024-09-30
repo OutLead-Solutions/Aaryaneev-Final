@@ -46,7 +46,7 @@
         .our-studio span {
             font-size: 16px;
             text-align: start;
-            line-height: 30px;
+            line-height: 31px;
             margin-bottom: 30px;
             width: 100%;
 
@@ -64,13 +64,14 @@
         } */
 
         #container {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
             height: 100vh;
             background: #f5f5f5;
+            z-index: -2;
 
             /* box-shadow: 0 30px 50px #dbdbdb; */
 
@@ -128,7 +129,7 @@
         }
 
         .content .our-studio {
-            margin-top: 110vh;
+            margin-top: 120vh;
         }
 
         @media (min-width:601px) and (max-width:1100px) {
@@ -156,7 +157,7 @@
         .our-studio h1 {
             font-size: 55px;
             text-align: start;
-            opacity: 0.06;
+            opacity: 0.03;
             position: absolute;
             left: -8px;
             top: -90px;
@@ -192,17 +193,7 @@
             display: none;
         }
 
-        #original-text {
-            position: absolute;
-            margin-top: -3rem;
-            font-size: 30px;
-            font-weight: 800;
-            /* text-align: start; */
-            line-height: 31px;
-            /* margin-bottom: 30px; */
-
-        }
-
+       
         @media (max-width:600px) {
             #container .item .content {
                 position: absolute;
@@ -226,25 +217,16 @@
                 color: black;
             }
 
-            #original-text {
-                /* position: absolute; */
-                margin-top: -9rem;
-                /* font-size: 30px; */
-                /* font-weight: 800; */
-                /* text-align: start; */
-                line-height: 31px;
-                /* margin-bottom: 30px; */
 
-            }
-
-            #sinceContent {
-                top: -80px;
-            }
-
+           
 
 
         }
-
+#original-text{
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
 
         #container .slide .item:nth-child(2) .content {
@@ -377,11 +359,7 @@
         }
 
         @media (max-width:450px) {
-            #original-text {
-                font-size: 26px;
-                /* margin-top: -9rem; */
-            }
-
+          
             .our-studio h1 {
                 font-size: 28px;
                 /* top: -160 !important; */
@@ -733,27 +711,18 @@
 
 
     <!-- START CONTENT -->
-    <div class="content">
+    <div class="content" id="BackgroundSet">
 
         <!-- START OUR STUDIOS -->
         <section class="our-studio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <!-- <div class="icons">
-                            <img src="images/construction1.png"
-                                style="height: 60%; width: 80px; margin-bottom: 30px; margin-right: 20px;  margin-top: -18px; "></img>
-                            <img src="images/architect (1)-1.png"
-                                style="height: 60%; width: 80px; margin-bottom: 30px; margin-right: 20px; margin-top: -18px; "></img>
-                            <img src="images/model-1.png"
-                                style="height: 60%; width: 80px; margin-bottom: 30px; margin-right: 20px; margin-top: -18px; "></img>
-                        </div> -->
-                        <div class="row ">
-                            <h4 id="original-text">CREATING&nbsp;LANDMARKS</h4>
-                            <h1>CREATING&nbsp;LANDMARKS<br></h1>
+            <div class="container" id="setAboutMainContainer">
+              
+                <div class="row ">
+                           
+                    <div class="col-lg-6 col-md-6"> <video src="./images/images/home/aryaneevvideo.mp4" width="100%"
+                            muted autoplay controls></video></div>
                             <div class="col-lg-6 col-md-6" id="sinceContent">
-
+                                <h4 id="original-text">CREATING&nbsp;LANDMARKS</h4>
                                 <span style="font-weight: 800;">SINCE 1989</span>
                                 <span>For the past 30 years, Aaryarath has been in the business of creating
                                     landmarks. It all began with a humble start, gathering funds from family members
@@ -765,12 +734,6 @@
                                     Aaryarath continues its journey, spanning generations and proudly bearing its
                                     iconic brand name.</span>
                             </div>
-                            <div class="col-lg-6 col-md-6"> <video src="./images/images/home/aryaneevvideo.mp4" width="100%"
-                                    muted autoplay controls></video></div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>
@@ -1240,7 +1203,7 @@
                             <span><a href="tel:+91 7777974741" style="color: white; text-decoration: none;">+91
                                     7777974741</a> <br />
                                 <a href="mailto:aaryarathdevelopers@gmail.com"
-                                    style="color: white; text-decoration: none;">aaryarathdevelopers@gmail.com</a><br/>
+                                    style="color: white; text-decoration: none;">aaryarathdevelopers@gmail.com</a>
                                 <!-- <a href="mailto:account@aaryaneev.com"
                                     style="color: white; text-decoration: none;">account@aaryaneev.com</a> -->
                                 <a href="mailto:info@aaryaneev.com"
