@@ -446,7 +446,7 @@ ul.z-tabs-nav.z-tabs-desktop {
 }
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 .clearfix:before,
@@ -528,7 +528,7 @@ ul.z-tabs-nav.z-tabs-desktop {
     z-index: 10 !important;
 }
 
-.ie7 body .z-tabs.vertical.top-right>.z-container {}
+
 
 .z-tabs.vertical.z-rounded>.z-container {
     -webkit-border-radius: 0 6px 6px 0;
@@ -2195,7 +2195,7 @@ ul.z-tabs-nav.z-tabs-desktop {
 }
 
 .what-we-do {
-    margin: 65px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 div#tabbed-nav {

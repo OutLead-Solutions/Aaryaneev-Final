@@ -162,6 +162,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+    appearance: button;
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -196,6 +197,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
     -webkit-appearance: textfield;
+    appearance: textfield;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -3023,6 +3025,7 @@ textarea.form-control {
 
 input[type="search"] {
     -webkit-appearance: none;
+    appearance: none;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -6751,6 +6754,7 @@ button.close {
     background: transparent;
     border: 0;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 .modal-open {
@@ -7823,17 +7827,6 @@ button.close {
     }
     .header .navigation {
         display: none;
-    }
-    .mobile-menu .cd-primary-nav-trigger .cd-menu-icon::before,
-    .mobile-menu .cd-primary-nav-trigger .cd-menu-icon:after {
-        /* background-color: #FFF; */
-    }
-    .mobile-menu .cd-menu-icon {
-        /* background-color: #FFF; */
-    }
-    .mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before,
-    .mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
-        /* background-color: #fff; */
     }
     .clients-words {
         background-size: 250%;
