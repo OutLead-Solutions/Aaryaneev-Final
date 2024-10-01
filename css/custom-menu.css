@@ -320,7 +320,8 @@ Main components
 
 
 .cd-primary-nav .cd-label {
-    color: #fff;
+    /* color: #fff; */
+    color: black;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
