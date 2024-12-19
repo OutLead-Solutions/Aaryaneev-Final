@@ -399,6 +399,14 @@ Main components
 }
 
 @media only screen and (min-width: 1170px) {
+    .ImageContainer{
+        height: 300px;
+        overflow:hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
     .cd-primary-nav li {
         font-size: 30px;
         font-size: 1.875rem;
